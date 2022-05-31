@@ -1,0 +1,47 @@
+{
+  "name": "mengyang-utils",
+  "version": "1.0.0",
+  "description": "Common tool sets",
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "*.d.ts"
+  ],
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "build": "rollup -c"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mengyang44253/myUtils.git"
+  },
+  "author": "Dylan <466879168@qq.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mengyang44253/myUtils/issues"
+  },
+  "homepage": "https://github.com/mengyang44253/myUtils#readme",
+  "dependencies": {
+    "@babel/core": "^7.18.2",
+    "@rollup/plugin-alias": "^3.1.9",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.3.0",
+    "esbuild": "^0.14.42",
+    "rollup": "^2.75.3",
+    "rollup-plugin-dts": "^4.2.2",
+    "rollup-plugin-esbuild": "^4.9.1",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.7.2"
+  }
+}
