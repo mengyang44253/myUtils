@@ -1,4 +1,4 @@
-import dayjs = require("dayjs");
+import * as dayjs from 'dayjs'
 
 /**
  * 秒级时间戳转化为时间
